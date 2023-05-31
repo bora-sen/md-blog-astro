@@ -1,5 +1,6 @@
 ---
-const { title, description } = Astro.props
+import Header from "../Components/Header.astro";
+const { title } = Astro.props
 ---
 
 <html lang="en">
@@ -8,10 +9,12 @@ const { title, description } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={description} />
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+    <main class="max-w-[55rem] mx-auto">
+      <Header />
+      <slot />
+    </main>
   </body>
 </html>

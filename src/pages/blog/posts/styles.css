@@ -1,0 +1,7 @@
+#parse_markdown > div > h1 {
+  @apply text-5xl font-bold;
+}
+
+#parse_markdown > div > h2 {
+  @apply text-3xl font-bold;
+}
